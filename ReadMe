@@ -6,12 +6,12 @@ This project is a **Streamlit-based application** that enables users to **upload
 
 ## 🚀 Features
 
-✅ **Upload multiple PDF files**
-✅ **Extract and split text for efficient processing**
-✅ **Convert text into embeddings using Google's Generative AI**
-✅ **Store and retrieve information using FAISS (Facebook AI Similarity Search)**
-✅ **Chat with your PDFs using a conversational AI model**
-✅ **Intuitive web interface built with Streamlit**
+- **Upload multiple PDF files**
+- **Extract and split text for efficient processing**
+- **Convert text into embeddings using Google's Generative AI**
+- **Store and retrieve information using FAISS (Facebook AI Similarity Search)**
+- **Chat with your PDFs using a conversational AI model**
+- **Intuitive web interface built with Streamlit**
 
 ---
 
@@ -21,8 +21,8 @@ This project is a **Streamlit-based application** that enables users to **upload
 
 Ensure you have the following installed:
 
-- 🐍 Python 3.8+
-- 📦 pip
+- Python 3.8+
+- pip
 
 ### 📥 Steps
 
@@ -75,12 +75,12 @@ Ensure you have the following installed:
 
 This project uses the following libraries:
 
-- 🖥 `streamlit` - for building the web application.
-- 📄 `PyPDF2` - for extracting text from PDFs.
-- 🧠 `langchain` - for processing and managing AI interactions.
-- ⚡ `FAISS` - for efficient text retrieval.
-- 🤖 `google-generativeai` - for AI-powered responses.
-- 🔐 `dotenv` - for managing environment variables.
+- `streamlit` - for building the web application.
+- `PyPDF2` - for extracting text from PDFs.
+- `langchain` - for processing and managing AI interactions.
+- `FAISS` - for efficient text retrieval.
+- `google-generativeai` - for AI-powered responses.
+- `dotenv` - for managing environment variables.
 
 ---
 
@@ -90,9 +90,9 @@ This project is licensed under the **MIT License**.
 
 ## 🙌 Acknowledgments
 
-💡 **Google Generative AI** for powering the chatbot.  
-🔗 **LangChain** for seamless integration of AI models.  
-🎨 **Streamlit** for an easy-to-use UI framework.
+- **Google Generative AI** for powering the chatbot.
+- **LangChain** for seamless integration of AI models.
+- **Streamlit** for an easy-to-use UI framework.
 
 ---
 
