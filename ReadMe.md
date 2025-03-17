@@ -53,13 +53,11 @@ Ensure you have the following installed:
 ## 🎯 Usage
 
 1. **Run the Streamlit app**:
-
    ```bash
    streamlit run app.py
    ```
 
 2. **Upload PDFs**:
-
    - Use the **sidebar** to upload multiple PDF files.
    - Click the `Submit and Process` button to process the documents.
 
@@ -90,4 +88,4 @@ This project is licensed under the **MIT License**.
 
 ---
 
-💡 _Feel free to modify and improve the project as needed!_ 🚀
+💡 *Feel free to modify and improve the project as needed!* 🚀
