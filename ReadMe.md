@@ -1,91 +1,98 @@
-# 📄 Chat with Multiple PDFs using Gemini
+# Chat with Multiple PDFs using Gemini
 
-This project is a **Streamlit-based application** that enables users to **upload multiple PDF files** and interact with them using **Google's Gemini AI model**. The app extracts text from PDFs, processes it into vector embeddings using FAISS, and allows users to ask questions based on the content of the uploaded documents.
+This project is a Streamlit application that allows users to upload
+multiple PDF documents and ask questions about their contents using
+Google's Gemini model.
 
-## 🚀 Features
+The application extracts text from uploaded PDFs, converts the text into
+vector embeddings, stores them using FAISS, and retrieves the most
+relevant information when a user asks a question. The result is a simple
+interface for interacting with the contents of large document
+collections.
 
-- ✅ **Upload multiple PDF files**
-- ✅ **Extract and split text for efficient processing**
-- ✅ **Convert text into embeddings using Google's Generative AI**
-- ✅ **Store and retrieve information using FAISS (Facebook AI Similarity Search)**
-- ✅ **Chat with your PDFs using a conversational AI model**
-- ✅ **Intuitive web interface built with Streamlit**
+## Features
 
-## 🛠 Installation
+• Upload and process multiple PDF files\
+• Extract and chunk document text for efficient retrieval\
+• Generate embeddings using Google Generative AI\
+• Store embeddings with FAISS for fast similarity search\
+• Ask questions and receive answers grounded in the uploaded documents\
+• Simple web interface built with Streamlit
 
-### 📌 Prerequisites
+## Installation
 
-Ensure you have the following installed:
+### Prerequisites
 
-- 🐍 Python 3.8+
-- 📦 pip
+Make sure the following are installed:
 
-### 📥 Steps
+• Python 3.8 or higher\
+• pip
 
-1. **Clone the repository**:
+### Setup
 
-   ```bash
-   git clone https://github.com/yourusername/chat-with-multiple-pdfs.git
-   cd chat-with-multiple-pdfs
-   ```
+Clone the repository
 
-2. **Create a virtual environment** _(optional but recommended)_:
+``` bash
+git clone https://github.com/yourusername/chat-with-multiple-pdfs.git
+cd chat-with-multiple-pdfs
+```
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On macOS/Linux
-   venv\Scripts\activate  # On Windows
-   ```
+Create a virtual environment (recommended)
 
-3. **Install dependencies**:
+``` bash
+python -m venv venv
+source venv/bin/activate
+```
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+On Windows
 
-4. **Set up environment variables**:
-   - Create a `.env` file in the root directory and add:
-     ```env
-     GOOGLE_API_KEY=your_google_api_key_here
-     ```
-   - Replace `your_google_api_key_here` with your actual API key.
+``` bash
+venv\Scripts\activate
+```
 
-## 🎯 Usage
+Install dependencies
 
-1. **Run the Streamlit app**:
-   ```bash
-   streamlit run app.py
-   ```
+``` bash
+pip install -r requirements.txt
+```
 
-2. **Upload PDFs**:
-   - Use the **sidebar** to upload multiple PDF files.
-   - Click the `Submit and Process` button to process the documents.
+Create an environment file
 
-3. **Ask Questions**:
-   - Enter a question related to the uploaded PDFs.
-   - The AI model will retrieve relevant information and respond.
+Create a `.env` file in the root directory and add your API key.
 
-## 📦 Dependencies
+    GOOGLE_API_KEY=your_google_api_key_here
 
-This project uses the following libraries:
+## Usage
 
-- 🖥 `streamlit` - for building the web application.
-- 📄 `PyPDF2` - for extracting text from PDFs.
-- 🧠 `langchain` - for processing and managing AI interactions.
-- ⚡ `FAISS` - for efficient text retrieval.
-- 🤖 `google-generativeai` - for AI-powered responses.
-- 🔐 `dotenv` - for managing environment variables.
+Run the Streamlit application
 
-## 📜 License
+``` bash
+streamlit run app.py
+```
 
-This project is licensed under the **MIT License**.
+Upload PDF files using the sidebar.
 
-## 🙌 Acknowledgments
+After processing the documents, enter a question related to the uploaded
+PDFs and the system will retrieve relevant content and generate an
+answer.
 
-- 💡 **Google Generative AI** for powering the chatbot.
-- 🔗 **LangChain** for seamless integration of AI models.
-- 🎨 **Streamlit** for an easy-to-use UI framework.
+## Dependencies
 
----
+This project relies on several libraries
 
-💡 *Feel free to modify and improve the project as needed!* 🚀
+• streamlit for the web interface\
+• PyPDF2 for extracting text from PDFs\
+• langchain for document processing and model orchestration\
+• FAISS for vector similarity search\
+• google-generativeai for Gemini model access\
+• python-dotenv for environment variable management
+
+## License
+
+This project is released under the MIT License.
+
+## Acknowledgments
+
+Google Generative AI for the Gemini model\
+LangChain for the AI workflow tooling\
+Streamlit for the application interface
